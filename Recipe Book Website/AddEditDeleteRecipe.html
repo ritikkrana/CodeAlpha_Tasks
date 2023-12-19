@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding/Editing/Deleting Recipe</title>
+    <link rel="stylesheet" href="AddEditDeleteRecipe.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap">
+</head>
+
+<body>
+    <div class="navbar">
+        <h2 class="brandName"><a href="/">Recipe Book</a></h2>
+        <ul id="navLinks">
+            <li class="item"><a href="/">Home</a></li>
+            <li class="item"><a href="/AddEditDeleteRecipe.html">Add/Edit/Delete Recipe</a></li>
+        </ul>
+    </div>
+        <h1 id="heading">ADD, EDIT OR DELETE A RECIPE</h1>  
+        <div id="div2">
+            <form>
+                <div class="form-item">
+                    <input type="text" id="inp1" placeholder="Enter name of the recipe">
+                </div>
+                <div class="form-item">
+                    <textarea name="ingredients" id="textArea1" rows="3" placeholder="Enter all the ingredients (comma separated)"></textarea> 
+                </div>
+                <div class="form-item">
+                    <textarea name="method" id="textArea2" rows="3" placeholder="Enter the method"></textarea>
+                </div>
+                <div id="form-buttons">
+                    <button type="button" id="addBTN" class="btn" onclick="addRecipe()">ADD</button>
+                    <button type="button" class="btn" onclick="resetRecipe()">RESET</button>
+                </div>
+            </form>
+        </div>
+        <div id="div3">
+            <div id="result1">
+                <h3>Recipe 1</h3>
+                <p>NAME</p>
+                <button type="button" onclick="view1()">VIEW</button>
+                <button type="button" onclick="edit1()">EDIT</button>
+                <button type="button" onclick="delete1()">DELETE</button>
+                <div class="myDiv" id="myDiv1"></div>
+                <div class="meth" id="meth1"></div>
+            </div>
+            <div id="result2">
+                <h3>Recipe 2</h3>
+                <p>NAME</p>
+                <button type="button" onclick="view2()">VIEW</button>
+                <button type="button" onclick="edit2()">EDIT</button>
+                <button type="button" onclick="delete2()">DELETE</button>
+                <div class="myDiv" id="myDiv2"></div>
+                <div class="meth" id="meth2"></div>
+            </div>
+            <div id="result3">
+                <h3>Recipe 3</h3>
+                <p>NAME</p>
+                <button type="button" onclick="view3()">VIEW</button>
+                <button type="button" onclick="edit3()">EDIT</button>
+                <button type="button" onclick="delete3()">DELETE</button>
+                <div class="myDiv" id="myDiv3"></div>
+                <div class="meth" id="meth3"></div>
+            </div>
+            <div id="result4">
+                <h3>Recipe 4</h3>
+                <p>NAME</p>
+                <button type="button" onclick="view4()">VIEW</button>
+                <button type="button" onclick="edit4()">EDIT</button>
+                <button type="button" onclick="delete4()">DELETE</button>
+                <div class="myDiv" id="myDiv4"></div>
+                <div class="meth" id="meth4"></div>
+            </div>
+            <div id="result5">
+                <h3>Recipe 5</h3>
+                <p>NAME</p>
+                <button type="button" onclick="view5()">VIEW</button>
+                <button type="button" onclick="edit5()">EDIT</button>
+                <button type="button" onclick="delete5()">DELETE</button>
+                <div class="myDiv" id="myDiv5"></div>
+                <div class="meth" id="meth5"></div>
+            </div>
+            <div id="result6">
+                <h3>Recipe 6</h3>
+                <p>NAME</p>
+                <button type="button" onclick="view6()">VIEW</button>
+                <button type="button" onclick="edit6()">EDIT</button>
+                <button type="button" onclick="delete6()">DELETE</button>
+                <div class="myDiv" id="myDiv6"></div>
+                <div class="meth" id="meth6"></div>
+            </div>
+            <div class="showBroad" id="showBroad1">
+                <textarea name="broad1" id="textArea3" disabled></textarea>
+                <textarea name="broad2" id="textArea4" disabled></textarea>
+                <button type="button" onclick="closeBTN()">CLOSE</button>
+            </div>
+        </div>
+        <script src="AddEditDeleteRecipe.js"></script>
+</body>
+</html>

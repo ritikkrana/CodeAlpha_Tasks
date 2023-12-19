@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+
+.navbar::before {
+    background: url('./images/bgImage.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+.brandName{
+    display: inline-block;
+    margin-left: 15px;
+}
+#navLinks{
+    display: inline-block;
+    margin-left: 200px;
+}
+.item{
+    display: inline-block;
+    margin-left: 75px
+}
+.item>a , .brandName>a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#heading{
+   text-align: center;
+}
+#div2{
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: black;
+    width: 44%;
+    padding: 50px;
+    margin: 20px 15px;
+    position: absolute;
+}
+.form-item input{
+    font-family: 'Montserrat', sans-serif;
+    width: 98%;
+    margin-bottom: 8px;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 12px;
+    border: 2px solid #45c7cb;
+}
+.form-item textarea{
+    font-family: 'Montserrat', sans-serif;
+    width: 98%;
+    margin-bottom: 4px;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 12px;
+    border: 2px solid #45c7cb;
+    resize: none;
+}
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    width: 98%;
+    text-align: center;
+    margin-bottom: 8px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: grey;
+    color: black;
+}
+
+
+#result1{
+    grid-area: box1;
+    border: 2px solid rgb(87, 1, 1);
+    background-color: rgb(165, 79, 42);
+    text-align: center;
+    display: none;
+}
+#result2{
+    grid-area: box2;
+    border: 2px solid rgb(87, 1, 1);
+    background-color: rgb(165, 79, 42);
+    text-align: center;
+    display: none;
+}
+#result3{
+    grid-area: box3;
+    border: 2px solid rgb(87, 1, 1);
+    background-color: rgb(165, 79, 42);
+    text-align: center;
+    display: none;
+}
+#result4{
+    grid-area: box4;
+    border: 2px solid rgb(87, 1, 1);
+    background-color: rgb(165, 79, 42);
+    text-align: center;
+    display: none;
+}
+#result5{
+    grid-area: box5;
+    border: 2px solid rgb(87, 1, 1);
+    background-color: rgb(165, 79, 42);
+    text-align: center;
+    display: none;
+}
+#result6{
+    grid-area: box6;
+    border: 2px solid rgb(87, 1, 1);
+    background-color: rgb(165, 79, 42);
+    text-align: center;
+    display: none;
+} 
+
+
+#div3{
+    /* border: 2px solid pink; */
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    right: 15px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'box1 box2'
+    'box3 box4'
+    'box5 box6';
+}
+.showBroad{
+    border: 2px solid yellow;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.showBroad textarea{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: black;
+    resize: none;
+    width: 100%;
+    height: 49%;
+    color: white;
+    margin-bottom: 0px;
+    border-width: 0px;
+}
+#textArea3{
+    border: 2px solid yellow;
+}
+#div3 div button{
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+}
+.showBroad button{
+    position: absolute;
+    right:0px;
+    top: -23px;
+}
+.myDiv{
+    display: none;
+}
+.meth{
+    display: none;
+}
