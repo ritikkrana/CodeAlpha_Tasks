@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Tracker</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="secondheader">
+            <h1>ISSUE TRACKER SYSTEM</h1>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-div">
+            <h4>Create & Assign a New Issue</h4>
+            <form id="form">
+                <label for="issueName">Name</label>
+                <input type="text" id="issueName" placeholder="Enter Issue Name" required>
+
+                <label for="issueDscrptn">Description</label>
+                <textarea id="issueDscrptn" rows="4" placeholder="Enter Issue Description" required></textarea>
+
+                <div class="form-btn">
+                    <button id="btn-sbmt" onclick="createIssue(event)">Create</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="section-div">
+            <h4 id="headingCI">Created Issues</h4>
+            <div id="createdIssuesBox">
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

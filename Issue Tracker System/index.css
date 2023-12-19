@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: green;
+}
+.header, .section{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.secondheader{
+    /* border: 2px solid black; */
+    text-align: center;
+    height: 72px;
+    background-color: white;
+    width: 80%;
+}
+.section-div{
+    /* border: 2px solid black; */
+    width: 80%;
+    height: 295px;
+    background-color: white;
+    margin: 1%;
+    padding: 0 15px;
+}
+
+
+#issueName, #issueDscrptn{
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    background-color: rgb(211, 204, 204);
+    border: 2px solid rgb(62, 60, 60);
+    width: 100%;
+    margin: 8px 0;
+    resize: none;
+}
+#btn-sbmt{
+    font-family: 'Montserrat', sans-serif;
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+#btn-sbmt:hover{
+    background-color: rgb(62, 64, 60);
+    color: white;
+}
+.form-btn{
+    text-align: center;
+}
+
+
+#createdIssuesBox{
+    border: 2px solid red;
+    height: 85%;
+    padding: 15px;
+}
+#headingCI{
+    margin-bottom: 0px;
+}
